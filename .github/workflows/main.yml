@@ -1,4 +1,5 @@
+name: Check rules
 on:
   pull_request:
     branches:
-    - Practice
+    - main
