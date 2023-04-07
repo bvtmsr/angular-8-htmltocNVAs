@@ -7,18 +7,24 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 
+import {FooterComponent} from './footer/footer.component'
+import {HomeComponent} from './home/home.component'
+
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: HomeComponent },
+      { path: 'prodduct', component: ProductListComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    FooterComponent,
+    HomeComponent
   ],
   bootstrap: [ AppComponent ]
 })
